@@ -4,69 +4,135 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(211, 211, 211, 0.411);
-    height: 80vh;
-}
+/* - - - - - CABEÇALHO - - - - - */
 
 header {
+    display: flex;
     background-color: #ffffff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo-ifbaiano {
     height: 70px;
-    margin-left: 50px;
+    margin-left: 30px;
+}
+
+.coma-feliz {
+    height: 70px;
+    margin-right: 30px;
+}
+
+/* - - - - - CORPO DO SITE - - - - - */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1;
+    height: 80vh;
 }
 
 main {
     margin: 0 auto;
     background-color: lightgray;
-    width: 80%;
-    height: 532px;
+    max-width: 800px;
+    height: 555px;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, .08);
 }
 
+/* - - - -  DATA-HORA  - - - - */
+
 .data-hora {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 0px;
     border-bottom: solid 1px black;
+    background-color: #2F9E40;
+    font-size: 0.9em;
 }
 
 .data-hora > p {
     margin: 0px 20px;
+    color: white;
+}
+.botão {
+    border: 1px solid #25692A;
+    border-radius: 5px;
+    display:inline-block;
+    padding:6px 10px;
+    text-decoration:none;
+    border-color:#f61f0e;
+    background:linear-gradient(to bottom, #ff5445 5%, #f61f0e 100%);
+    box-shadow:inset 0px 1px 0px 0px #fff4f3;
+    color:#fff;
+    text-shadow:0px 1px 0px #000000; 
+    margin-right: 20px;
+}
+.botão:hover {
+    background:linear-gradient(to bottom, #f61f0e 5%, #fca8a1 100%);
 }
 
-.agendamentos-feitos > h1{
-margin-left: 40px;
+
+
+/*  - - - - - AGENDAMENTOS - - - - - */
+
+.agendamentos-feitos {
+    margin: 0;
+    background-color: white;
+    height: 450px;
+    padding: 20px;
 }
+.agendamentos-feitos > h1{
+    margin: 0px 0px 20px 20px;
+    width: 300px;
+    font-size: 1.5em;
+    text-align: center;
+    color: gray;
+    border-radius: 5px;
+}
+
+/* - - - - - TABELA - - - - - */
 
 table {
     margin: auto;
-    border: solid 1px black;
-    width: 50vw;
+    background-color: black;
+    width: 70vw;
     border-radius: 5px;
 }
 
 th {
-    background-color: whitesmoke;
+    background-color: lightgray;
+    color: black;
     padding: 10px;
-    border: solid 1px black;
 }
 td {
-    background-color: white;
+    background-color: whitesmoke;
     text-align: center;
     padding: 10px;
 }
 
+/* - - - - - RODAPÉ - - - - - */
+
 footer {
-    margin: 0;
-    background-color: black;
-    color: white;
+    margin-top: 0px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-top: solid 1px black;
 }
 
 footer > p {
-    margin: 0;
-    text-align: center;
-    padding: 5px;
+    margin: 0px;
+}
+
+footer > p > a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
