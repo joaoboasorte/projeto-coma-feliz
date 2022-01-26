@@ -50,7 +50,7 @@ main {
     padding: 20px 0px;
     border-bottom: solid 1px black;
     background-color: #2F9E40;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 .data-hora > p {
@@ -58,20 +58,18 @@ main {
     color: white;
 }
 .botão {
-    border: 1px solid #25692A;
-    border-radius: 5px;
-    display:inline-block;
-    padding:6px 10px;
-    text-decoration:none;
-    border-color:#f61f0e;
-    background:linear-gradient(to bottom, #ff5445 5%, #f61f0e 100%);
-    box-shadow:inset 0px 1px 0px 0px #fff4f3;
-    color:#fff;
-    text-shadow:0px 1px 0px #000000; 
+    text-decoration: none;
+    background-color: #cc3726;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
     margin-right: 20px;
+    border: none;
 }
 .botão:hover {
-    background:linear-gradient(to bottom, #f61f0e 5%, #fca8a1 100%);
+    background:linear-gradient(to bottom, lightgray 20%, gray 80%);
+    color: white;
 }
 
 
@@ -97,9 +95,8 @@ main {
 
 table {
     margin: auto;
-    background-color: black;
+    background-color: rgb(110, 110, 110);
     width: 70vw;
-    border-radius: 5px;
 }
 
 th {
