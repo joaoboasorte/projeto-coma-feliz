@@ -187,7 +187,6 @@ hr {
     margin: 0 auto;
     background-color: white;
     width: 70%;
-    height: 555px;
     box-shadow: 0px 0 10px rgba(0, 0, 0, .05);
 }
 
@@ -265,30 +264,6 @@ td {
     padding: 10px;
 }
 
-/* - - - - - RODAPÉ - - - - - */
-
-footer {
-    margin-top: 0px;
-    background-color: white;
-    color: black;
-    text-align: center;
-    border-top: solid 1px black;
-}
-
-footer > p {
-    margin: 0px;
-}
-
-footer > p > a{
-    color: black;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-footer > p > a:hover {
-    text-decoration: underline;
-}
-
 /*---------------------------- Tela de solicitação ---------------------------*/
 
 .componentes {
@@ -313,6 +288,152 @@ footer > p > a:hover {
 #btn-eviar {
     width: auto;
     margin: 40px 90px 0 auto;
+}
+
+/*----------------------------- ADMINISTRAÇÃO ------------------------------*/
+
+/*------------------------------- Solicitação Adm --------------------------------*/
+
+.corpo {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.solicitacao .uniao {
+    display: flex;  
+    align-items: center;
+    padding: 20px 100px;
+    padding-bottom: 0;
+}
+
+.solicitacao .uniao .imagem_usuario ion-icon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #7f8c8d;
+    background-color: #bdc3c7;
+}
+
+.solicitacao .uniao .identificacao {
+    width: 80%;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.solicitacao .uniao .identificacao #nome h4{
+    font-size: 15px;
+}
+.solicitacao .uniao .identificacao #matricula h4{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.solicitacao .uniao .identificacao h4 {
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+}
+
+.solicitacao .uniao .buttons {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.solicitacao .uniao .buttons button {
+   width: 45px;
+   height: 45px;
+   border: none;
+   margin: 3px;
+   cursor: pointer;
+}
+
+.solicitacao .uniao .buttons #no{
+    background-color: #cc3726;
+    transition: .2s;
+}
+
+.solicitacao .uniao .buttons #no:hover{
+    background-color: #d95344;
+}
+
+.solicitacao .uniao .buttons #yes{
+    background-color: #2F9E40;
+    transition: .2s;
+}
+
+.solicitacao .uniao .buttons #yes:hover{
+    background-color: #519D5C;
+}
+
+.solicitacao .uniao .buttons ion-icon{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.solicitacao #justificativa{
+    color: black;
+    font-size: 13px;
+    padding: 0 166px 20px 166px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b2bec3;
+}
+
+/*----------------------------- Lista de Alunos ------------------------------*/
+
+#principal2 .data-hora .btn_nav {
+    display: flex;
+}
+
+#principal2 .alunos {
+    color: black;
+    padding-bottom: 30px;
+}
+
+#principal2 .alunos .data {
+    text-align: center;
+    border-bottom: 1px solid #b2bec3;
+    margin: 20px;
+}
+
+#principal2 .alunos .data h4 {
+    font-weight: normal;
+}
+
+#principal2 .alunos .nomes {
+    text-align: left;
+    margin: 50px 100px;
+}
+
+#principal2 .alunos .nomes h5 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* - - - - - RODAPÉ - - - - - */
+
+footer {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-top: solid 1px black;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+footer > p > a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
 
 /* - - - - - - - - - - - - - Media Query - - - - - - - - - - - - - - - */
@@ -375,6 +496,22 @@ footer > p > a:hover {
     table {
         width: 100%;
     }
+    /*-------------------------- Solicitação Adm ------------------------------*/
+
+
+    .solicitacao .uniao {
+    padding: 10px;
+}
+    .solicitacao #justificativa{
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+/*--------------------------- Lista de Alunos -----------------------------*/
+    #principal2 .alunos .nomes {
+        text-align: left;
+        margin: 50px 10px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -436,6 +573,23 @@ footer > p > a:hover {
 
 }
 
+/*-------------------------- Solicitação Adm ------------------------------*/
+
+
+.solicitacao .uniao {
+    padding: 10px;
+}
+.solicitacao #justificativa{
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/*--------------------------- Lista de Alunos -----------------------------*/
+#principal2 .alunos .nomes {
+    text-align: left;
+    margin: 50px 10px;
+}
+
 @media only screen and (max-width: 768px) {
 
      /* - - - - - - INDEX (Tela de Login) - - - - - - */
@@ -476,4 +630,21 @@ footer > p > a:hover {
     .botao {
         margin-right: 10px;
     }
+
+/*-------------------------- Solicitação Adm ------------------------------*/
+
+    .solicitacao .uniao {
+        padding: 10px;
+    }
+    .solicitacao #justificativa{
+        text-align: justify;
+        padding: 10px 30px;
+    }
+    
+/*--------------------------- Lista de Alunos -----------------------------*/
+    #principal2 .alunos .nomes {
+        text-align: left;
+        margin: 50px 20px;
+    }
+    
 }
