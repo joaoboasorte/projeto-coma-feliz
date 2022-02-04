@@ -188,6 +188,7 @@ hr {
     background-color: white;
     width: 70%;
     box-shadow: 0px 0 10px rgba(0, 0, 0, .05);
+    padding: 0;
 }
 
 /* - - - -  DATA-HORA  - - - - */
@@ -267,7 +268,7 @@ td {
 /*---------------------------- Tela de solicitação ---------------------------*/
 
 .componentes {
-    margin: 30px auto;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -287,7 +288,7 @@ td {
 
 #btn-eviar {
     width: auto;
-    margin: 40px 90px 0 auto;
+    margin: 30px 90px 30px auto;
 }
 
 /*----------------------------- ADMINISTRAÇÃO ------------------------------*/
@@ -514,7 +515,7 @@ footer > p > a:hover {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
     
     /* - - - - - - header - - - - - - */
     .imagem {
